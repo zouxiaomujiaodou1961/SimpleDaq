@@ -44,9 +44,9 @@
 			<Item Name="TreeSubVIs" Type="Folder">
 				<Item Name="Add Item.vi" Type="VI" URL="../GuideTree/TreeSubVIs/Add Item.vi"/>
 			</Item>
-			<Item Name="TreeInfor.vi" Type="VI" URL="../GuideTree/TreeInfor.vi"/>
-			<Item Name="FGV_GuideTree.ctl" Type="VI" URL="../GuideTree/FGV_GuideTree.ctl"/>
-			<Item Name="FGV_GuideTree.vi" Type="VI" URL="../GuideTree/FGV_GuideTree.vi"/>
+			<Item Name="TreeInfor.vi" Type="VI" URL="../UIchange/GuideTree/TreeInfor.vi"/>
+			<Item Name="FGV_GuideTree.ctl" Type="VI" URL="../UIchange/GuideTree/FGV_GuideTree.ctl"/>
+			<Item Name="FGV_GuideTree.vi" Type="VI" URL="../UIchange/GuideTree/FGV_GuideTree.vi"/>
 		</Item>
 		<Item Name="Modules" Type="Folder">
 			<Item Name="Share vis" Type="Folder">
@@ -59,6 +59,7 @@
 			<Item Name="PXI8431_com.vi" Type="VI" URL="../Modules/PXI8431_com.vi"/>
 			<Item Name="PXI6120_Sai.vi" Type="VI" URL="../Modules/PXI6120_Sai.vi"/>
 			<Item Name="PXI6514_dio.vi" Type="VI" URL="../Modules/PXI6514_dio.vi"/>
+			<Item Name="PXI6602_tio.vi" Type="VI" URL="../Modules/PXI6602_tio.vi"/>
 		</Item>
 		<Item Name="UIchange" Type="Folder">
 			<Item Name="FGV_UIchange.vi" Type="VI" URL="../UIchange/FGV_UIchange.vi"/>
@@ -71,17 +72,28 @@
 			<Item Name="PXI6514_dio" Type="Folder">
 				<Item Name="Where Do change.vi" Type="VI" URL="../SubVIs/Where Do change.vi"/>
 			</Item>
+			<Item Name="Cut over Item Sym.vi" Type="VI" URL="../SubVIs/Cut over Item Sym.vi"/>
+			<Item Name="Get XonXoff.vi" Type="VI" URL="../SubVIs/Get XonXoff.vi"/>
+			<Item Name="FGV_UserMenu.vi" Type="VI" URL="../Modules/ShareLib/FGV_UserMenu.vi"/>
 		</Item>
 		<Item Name="hardware" Type="Folder">
-			<Item Name="FGV_Analog Input.vi" Type="VI" URL="../hardware/PXI6251_AI/FGV_Analog Input.vi"/>
+			<Item Name="FGV_Analog Input.vi" Type="VI" URL="../Hardware/PXI6251_AI/FGV_Analog Input.vi"/>
+			<Item Name="AO_Volt_and_Curr.vi" Type="VI" URL="../Hardware/AO_Volt_and_Curr.vi"/>
+			<Item Name="FGV_PXI8431rs.vi" Type="VI" URL="../Hardware/Serial/FGV_PXI8431rs.vi"/>
 		</Item>
 		<Item Name="Controls" Type="Folder">
+			<Item Name="FS_PXI6514DIO.ctl" Type="VI" URL="../controls/FS_PXI6514DIO.ctl"/>
 			<Item Name="QI_6251ai.ctl" Type="VI" URL="../controls/QI_6251ai.ctl"/>
 			<Item Name="FS_PXI6521ai.ctl" Type="VI" URL="../controls/FS_PXI6521ai.ctl"/>
+			<Item Name="FS_PXI6120sai.ctl" Type="VI" URL="../controls/FS_PXI6120sai.ctl"/>
+			<Item Name="FS_PXI6704ao.ctl" Type="VI" URL="../controls/FS_PXI6704ao.ctl"/>
 		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
-		<Item Name="FS_PXI6120sai.ctl" Type="VI" URL="../controls/FS_PXI6120sai.ctl"/>
-		<Item Name="FS_PXI6514DIO.ctl" Type="VI" URL="../controls/FS_PXI6514DIO.ctl"/>
+		<Item Name="Popup.lvclass" Type="LVClass" URL="../Popup/Popup.lvclass"/>
+		<Item Name="Get ao_parameter.vi" Type="VI" URL="../SubVIs/Get ao_parameter.vi"/>
+		<Item Name="Initialize multlist.vi" Type="VI" URL="../SubVIs/Initialize multlist.vi"/>
+		<Item Name="FS_PXI8431com.ctl" Type="VI" URL="../controls/FS_PXI8431com.ctl"/>
+		<Item Name="FS_PXI6602TIO.ctl" Type="VI" URL="../controls/FS_PXI6602TIO.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
@@ -117,14 +129,6 @@
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
-				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
-				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
-				<Item Name="Read PNG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/png.llb/Read PNG File.vi"/>
-				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
-				<Item Name="Check Path.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Path.vi"/>
-				<Item Name="Directory of Top Level VI.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Directory of Top Level VI.vi"/>
-				<Item Name="Create Mask By Alpha.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Create Mask By Alpha.vi"/>
-				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="DAQmx Read.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read.vi"/>
 				<Item Name="DAQmx Read (Analog 1D Wfm NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog 1D Wfm NChan NSamp).vi"/>
@@ -256,19 +260,7 @@
 				<Item Name="DAQmx Create Channel (AI-Acceleration-4 Wire DC Voltage).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-4 Wire DC Voltage).vi"/>
 				<Item Name="DAQmx Create Channel (AI-Acceleration-Charge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-Charge).vi"/>
 				<Item Name="DAQmx Create Channel (AI-Charge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Charge).vi"/>
-				<Item Name="DAQmx Timing.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing.vi"/>
-				<Item Name="DAQmx Timing (Sample Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Sample Clock).vi"/>
-				<Item Name="DAQmx Timing (Handshaking).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Handshaking).vi"/>
-				<Item Name="DAQmx Timing (Implicit).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Implicit).vi"/>
-				<Item Name="DAQmx Timing (Use Waveform).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Use Waveform).vi"/>
-				<Item Name="DAQmx Timing (Change Detection).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Change Detection).vi"/>
-				<Item Name="DAQmx Timing (Burst Import Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Burst Import Clock).vi"/>
-				<Item Name="DAQmx Timing (Burst Export Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Burst Export Clock).vi"/>
-				<Item Name="DAQmx Timing (Pipelined Sample Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Pipelined Sample Clock).vi"/>
 				<Item Name="DAQmx Clear Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Clear Task.vi"/>
-				<Item Name="DAQmx Configure Logging.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Configure Logging.vi"/>
-				<Item Name="DAQmx Configure Logging (TDMS).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Configure Logging (TDMS).vi"/>
-				<Item Name="DAQmx Stop Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Stop Task.vi"/>
 				<Item Name="DAQmx Start Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Start Task.vi"/>
 				<Item Name="DAQmx Write (Counter 1D Time 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Counter 1D Time 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Write (Counter 1D Ticks 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Counter 1D Ticks 1Chan NSamp).vi"/>
@@ -320,14 +312,42 @@
 				<Item Name="DAQmx Write (Analog 1D DBL NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D DBL NChan 1Samp).vi"/>
 				<Item Name="DAQmx Write (Analog 1D DBL 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D DBL 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Write.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write.vi"/>
+				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
+				<Item Name="DAQmx Stop Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Stop Task.vi"/>
+				<Item Name="DAQmx Timing.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing.vi"/>
+				<Item Name="DAQmx Timing (Sample Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Sample Clock).vi"/>
+				<Item Name="DAQmx Timing (Handshaking).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Handshaking).vi"/>
+				<Item Name="DAQmx Timing (Implicit).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Implicit).vi"/>
+				<Item Name="DAQmx Timing (Use Waveform).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Use Waveform).vi"/>
+				<Item Name="DAQmx Timing (Change Detection).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Change Detection).vi"/>
+				<Item Name="DAQmx Timing (Burst Import Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Burst Import Clock).vi"/>
+				<Item Name="DAQmx Timing (Burst Export Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Burst Export Clock).vi"/>
+				<Item Name="DAQmx Timing (Pipelined Sample Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Pipelined Sample Clock).vi"/>
+				<Item Name="DAQmx Configure Logging.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Configure Logging.vi"/>
+				<Item Name="DAQmx Configure Logging (TDMS).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Configure Logging (TDMS).vi"/>
+				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
+				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
+				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
+				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
+				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
+				<Item Name="Create Mask By Alpha.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Create Mask By Alpha.vi"/>
+				<Item Name="Directory of Top Level VI.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Directory of Top Level VI.vi"/>
+				<Item Name="Check Path.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Path.vi"/>
+				<Item Name="Read PNG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/png.llb/Read PNG File.vi"/>
+				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
+				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
 			</Item>
 			<Item Name="UserDefinedPath.vi" Type="VI" URL="../CommonVIs/UserDefinedPath.vi"/>
-			<Item Name="PSTree_Tree Custom Symbols.vi" Type="VI" URL="../Modules/ShareLib/Tree Toolkit/APIs/PSTree_Tree Custom Symbols.vi"/>
-			<Item Name="Serial - Settings.ctl" Type="VI" URL="../hardware/Serial/Serial - Settings.ctl"/>
+			<Item Name="Serial - Settings.ctl" Type="VI" URL="../Hardware/Serial/Serial - Settings.ctl"/>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Command.ctl" Type="VI" URL="../hardware/PXI6251_AI/Command.ctl"/>
+			<Item Name="Command.ctl" Type="VI" URL="../Hardware/PXI6251_AI/Command.ctl"/>
+			<Item Name="Display Running.vi" Type="VI" URL="../SubVIs/Display Running.vi"/>
+			<Item Name="FS_PXI8431rs.ctl" Type="VI" URL="../controls/FS_PXI8431rs.ctl"/>
+			<Item Name="Serial - XON-XOFF Characters.ctl" Type="VI" URL="../controls/Serial - XON-XOFF Characters.ctl"/>
+			<Item Name="Serial - ASCII Characters.ctl" Type="VI" URL="/D/Program Files (x86)/National Instruments/LabVIEW 2017/examples/Instrument IO/Serial/support/Serial - ASCII Characters.ctl"/>
+			<Item Name="PSTree_Tree Custom Symbols.vi" Type="VI" URL="../Modules/ShareLib/Tree Toolkit/APIs/PSTree_Tree Custom Symbols.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Main Application" Type="EXE">
