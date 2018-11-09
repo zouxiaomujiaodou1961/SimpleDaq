@@ -76,6 +76,9 @@
 			<Item Name="Get XonXoff.vi" Type="VI" URL="../SubVIs/Get XonXoff.vi"/>
 			<Item Name="FGV_UserMenu.vi" Type="VI" URL="../Modules/ShareLib/FGV_UserMenu.vi"/>
 			<Item Name="Get PXI8431 Max info.vi" Type="VI" URL="../SubVIs/Get PXI8431 Max info.vi"/>
+			<Item Name="Db PXI8431 process.vi" Type="VI" URL="../SubVIs/Db PXI8431 process.vi"/>
+			<Item Name="Initialize multlist.vi" Type="VI" URL="../SubVIs/Initialize multlist.vi"/>
+			<Item Name="Get ao_parameter.vi" Type="VI" URL="../SubVIs/Get ao_parameter.vi"/>
 		</Item>
 		<Item Name="hardware" Type="Folder">
 			<Item Name="FGV_Analog Input.vi" Type="VI" URL="../Hardware/PXI6251_AI/FGV_Analog Input.vi"/>
@@ -88,14 +91,15 @@
 			<Item Name="FS_PXI6521ai.ctl" Type="VI" URL="../controls/FS_PXI6521ai.ctl"/>
 			<Item Name="FS_PXI6120sai.ctl" Type="VI" URL="../controls/FS_PXI6120sai.ctl"/>
 			<Item Name="FS_PXI6704ao.ctl" Type="VI" URL="../controls/FS_PXI6704ao.ctl"/>
+			<Item Name="FS_PXI8431com.ctl" Type="VI" URL="../controls/FS_PXI8431com.ctl"/>
+			<Item Name="FS_PXI6602TIO.ctl" Type="VI" URL="../controls/FS_PXI6602TIO.ctl"/>
+		</Item>
+		<Item Name="SubPannel" Type="Folder">
+			<Item Name="FGV_select inset VI.vi" Type="VI" URL="../SubPannel/FGV_SubPannel/FGV_select inset VI.vi"/>
+			<Item Name="Func_Subpannel.ctl" Type="VI" URL="../SubPannel/FGV_SubPannel/Func_Subpannel.ctl"/>
 		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="Popup.lvclass" Type="LVClass" URL="../Popup/Popup.lvclass"/>
-		<Item Name="Get ao_parameter.vi" Type="VI" URL="../SubVIs/Get ao_parameter.vi"/>
-		<Item Name="Initialize multlist.vi" Type="VI" URL="../SubVIs/Initialize multlist.vi"/>
-		<Item Name="FS_PXI8431com.ctl" Type="VI" URL="../controls/FS_PXI8431com.ctl"/>
-		<Item Name="FS_PXI6602TIO.ctl" Type="VI" URL="../controls/FS_PXI6602TIO.ctl"/>
-		<Item Name="Db PXI8431 process.vi" Type="VI" URL="../SubVIs/Db PXI8431 process.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
@@ -361,40 +365,70 @@
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Main Application" Type="EXE">
+			<Item Name="SimpleJPZ" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{B511CD8F-BE21-4470-A7C4-3ACBADFC72C8}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{78EABFCD-5B97-4F87-AF3F-FF129EE73305}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{2CE40C4E-446A-4350-9E11-C85D8BAE8F13}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Main Application</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">SimpleJPZ</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Main Application</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/SimpleJPZ</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{09FD23A0-93D2-46A2-B12D-FA02255F97C6}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Main.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Main Application/Main.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">SimpleJPZ.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/SimpleJPZ/SimpleJPZ.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Main Application/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/SimpleJPZ/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E14DB2DD-E011-49B1-8A6D-0145D8676319}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{AB4EA391-07E9-460A-BCB2-6CA834374249}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Main Application</Property>
-				<Property Name="TgtF_internalName" Type="Str">Main Application</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Modules/Welcome.vi</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Modules/PXI6251_ai.vi</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].type" Type="Str">VI</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Modules/PXI6704_ao.vi</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].type" Type="Str">VI</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Modules/PXI8431_com.vi</Property>
+				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[5].type" Type="Str">VI</Property>
+				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Modules/PXI6120_Sai.vi</Property>
+				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[6].type" Type="Str">VI</Property>
+				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Modules/PXI6514_dio.vi</Property>
+				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[7].type" Type="Str">VI</Property>
+				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Modules/PXI6602_tio.vi</Property>
+				<Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[8].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">9</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">SimpleJPZ</Property>
+				<Property Name="TgtF_internalName" Type="Str">SimpleJPZ</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright ? 2012 </Property>
-				<Property Name="TgtF_productName" Type="Str">Main Application</Property>
+				<Property Name="TgtF_productName" Type="Str">SimpleJPZ</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{A9B9C488-ADD7-40F6-AAC2-547427E5CB24}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Main.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">SimpleJPZ.exe</Property>
 			</Item>
 		</Item>
 	</Item>
