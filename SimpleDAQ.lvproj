@@ -75,6 +75,7 @@
 			<Item Name="Cut over Item Sym.vi" Type="VI" URL="../SubVIs/Cut over Item Sym.vi"/>
 			<Item Name="Get XonXoff.vi" Type="VI" URL="../SubVIs/Get XonXoff.vi"/>
 			<Item Name="FGV_UserMenu.vi" Type="VI" URL="../Modules/ShareLib/FGV_UserMenu.vi"/>
+			<Item Name="Get PXI8431 Max info.vi" Type="VI" URL="../SubVIs/Get PXI8431 Max info.vi"/>
 		</Item>
 		<Item Name="hardware" Type="Folder">
 			<Item Name="FGV_Analog Input.vi" Type="VI" URL="../Hardware/PXI6251_AI/FGV_Analog Input.vi"/>
@@ -94,6 +95,7 @@
 		<Item Name="Initialize multlist.vi" Type="VI" URL="../SubVIs/Initialize multlist.vi"/>
 		<Item Name="FS_PXI8431com.ctl" Type="VI" URL="../controls/FS_PXI8431com.ctl"/>
 		<Item Name="FS_PXI6602TIO.ctl" Type="VI" URL="../controls/FS_PXI6602TIO.ctl"/>
+		<Item Name="Db PXI8431 process.vi" Type="VI" URL="../SubVIs/Db PXI8431 process.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
@@ -336,6 +338,11 @@
 				<Item Name="Read PNG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/png.llb/Read PNG File.vi"/>
 				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
 				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
+				<Item Name="DAQmx Read (Analog Wfm 1Chan NSamp Duration).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog Wfm 1Chan NSamp Duration).vi"/>
+				<Item Name="DAQmx Read (Analog 1D Wfm NChan NSamp Duration).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog 1D Wfm NChan NSamp Duration).vi"/>
+				<Item Name="DAQmx Read (Digital Wfm 1Chan NSamp Duration).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Digital Wfm 1Chan NSamp Duration).vi"/>
+				<Item Name="DAQmx Read (Digital 1D Wfm NChan NSamp Duration).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Digital 1D Wfm NChan NSamp Duration).vi"/>
+				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
 			</Item>
 			<Item Name="UserDefinedPath.vi" Type="VI" URL="../CommonVIs/UserDefinedPath.vi"/>
 			<Item Name="Serial - Settings.ctl" Type="VI" URL="../Hardware/Serial/Serial - Settings.ctl"/>
@@ -346,8 +353,12 @@
 			<Item Name="Display Running.vi" Type="VI" URL="../SubVIs/Display Running.vi"/>
 			<Item Name="FS_PXI8431rs.ctl" Type="VI" URL="../controls/FS_PXI8431rs.ctl"/>
 			<Item Name="Serial - XON-XOFF Characters.ctl" Type="VI" URL="../controls/Serial - XON-XOFF Characters.ctl"/>
-			<Item Name="Serial - ASCII Characters.ctl" Type="VI" URL="/D/Program Files (x86)/National Instruments/LabVIEW 2017/examples/Instrument IO/Serial/support/Serial - ASCII Characters.ctl"/>
 			<Item Name="PSTree_Tree Custom Symbols.vi" Type="VI" URL="../Modules/ShareLib/Tree Toolkit/APIs/PSTree_Tree Custom Symbols.vi"/>
+			<Item Name="Serial - ASCII Characters.ctl" Type="VI" URL="../controls/Serial - ASCII Characters.ctl"/>
+			<Item Name="demark PXI-8431.vi" Type="VI" URL="../SubVIs/demark PXI-8431.vi"/>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Main Application" Type="EXE">
