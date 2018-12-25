@@ -356,6 +356,7 @@
 			<Item Name="PSTree_Tree Custom Symbols.vi" Type="VI" URL="../Modules/ShareLib/Tree Toolkit/APIs/PSTree_Tree Custom Symbols.vi"/>
 			<Item Name="Serial - ASCII Characters.ctl" Type="VI" URL="../controls/Serial - ASCII Characters.ctl"/>
 			<Item Name="demark PXI-8431.vi" Type="VI" URL="../SubVIs/demark PXI-8431.vi"/>
+			<Item Name="RS-422 Transceiver Control.vi" Type="VI" URL="../Hardware/Serial/RS-422 Transceiver Control.vi"/>
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
