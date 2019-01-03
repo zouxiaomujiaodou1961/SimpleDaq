@@ -382,6 +382,10 @@
 				<Item Name="UpdateListBoxAfterKeyEvent.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/UpdateListBoxAfterKeyEvent.vi"/>
 				<Item Name="GoTo.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/GoTo.vi"/>
 				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
+				<Item Name="DAQmx Read (Analog Wfm 1Chan NSamp Duration).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog Wfm 1Chan NSamp Duration).vi"/>
+				<Item Name="DAQmx Read (Analog 1D Wfm NChan NSamp Duration).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog 1D Wfm NChan NSamp Duration).vi"/>
+				<Item Name="DAQmx Read (Digital Wfm 1Chan NSamp Duration).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Digital Wfm 1Chan NSamp Duration).vi"/>
+				<Item Name="DAQmx Read (Digital 1D Wfm NChan NSamp Duration).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Digital 1D Wfm NChan NSamp Duration).vi"/>
 			</Item>
 			<Item Name="UserDefinedPath.vi" Type="VI" URL="../CommonVIs/UserDefinedPath.vi"/>
 			<Item Name="Serial - Settings.ctl" Type="VI" URL="../Hardware/Serial/Serial - Settings.ctl"/>
@@ -394,10 +398,12 @@
 			<Item Name="Serial - XON-XOFF Characters.ctl" Type="VI" URL="../controls/Serial - XON-XOFF Characters.ctl"/>
 			<Item Name="PSTree_Tree Custom Symbols.vi" Type="VI" URL="../Modules/ShareLib/Tree Toolkit/APIs/PSTree_Tree Custom Symbols.vi"/>
 			<Item Name="Serial - ASCII Characters.ctl" Type="VI" URL="../controls/Serial - ASCII Characters.ctl"/>
-			<Item Name="demark PXI-8431.vi" Type="VI" URL="../SubVIs/demark PXI-8431.vi"/>
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="demark PXI-8431.vi" Type="VI" URL="../SubVIs/demark PXI-8431.vi"/>
+			<Item Name="RS-422 Transceiver Control.vi" Type="VI" URL="../Hardware/Serial/RS-422 Transceiver Control.vi"/>
+			<Item Name="FGV_COMinfo to file.vi" Type="VI" URL="../SubVIs/FGV_COMinfo to file.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="SimpleJPZ" Type="EXE">
